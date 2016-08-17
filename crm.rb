@@ -5,7 +5,13 @@
 require 'sinatra'
 require_relative 'contact'
 
+
 get '/' do 
 	@crm_app_name = "Bitmaker's CRM"
 	erb :index
 end
+
+get '/contacts/new' do 
+	erb :new_contact
+end
+
