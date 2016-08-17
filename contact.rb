@@ -14,7 +14,7 @@ class Contact
 
 	def initialize(first_name, last_name, email, note)
 		@first_name = first_name
-		@second_name = second_name
+		@last_name = last_name
 		@email = email
 		@note = note
 		@id = @@id
@@ -29,11 +29,4 @@ class Contact
 
 		return new_contact
 	end
-end
-
-get '/contacts' do
-	Contact.create('Mark', 'Zuckerberg', 'mark@facebook.com', 'CEO')
-	Contact.create('Sergey', 'Brin', 'sergey@google.com', 'Co-Founder')
-	Contact.create('Steve', 'Jobs', 'steve@apple.com', 'Visionary')
-	erb :contacts
 end
