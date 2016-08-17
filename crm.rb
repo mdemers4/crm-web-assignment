@@ -3,6 +3,7 @@
 # You'll have to implement it from scratch.
 
 require 'sinatra'
+require_relative 'contact'
 
 get '/' do 
 	@crm_app_name = "Bitmaker's CRM"
