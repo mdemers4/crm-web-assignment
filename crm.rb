@@ -7,7 +7,7 @@ require_relative 'contact'
 
 
 get '/' do 
-	@crm_app_name = "Bitmaker's CRM"
+	@crm_app_name = " Mitch's CRM "
 	erb :index
 end
 
@@ -23,4 +23,11 @@ post '/contacts' do
 	Contact.create(params[:first_name], params[:last_name], params[:email], params[:note])
 	redirect to('/contacts')
 end
+
+
+
+
+
+
+
 

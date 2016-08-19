@@ -1,0 +1,83 @@
+body {
+	color:lightgrey;
+	font-size: 85.7%; /* Base font size is 14px */
+    font-family:Georgia, Times, serif;
+    background-color: grey;
+}
+a:link, a:visited {
+    background-color:black;
+    color: white;
+    padding: 15px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+a:hover, a:active {
+    background-color: #bfe1f1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+};
+ 
+li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;
+}
+
+
+input[type=text] {
+    background-color: lightblue;
+    border: 3px solid #555;
+    border-radius: 5px;
+    margin: 3px;
+}
+h1 {
+	text-align: center;
+    color:black;
+}
+.main_links { }
+.main_links ul { list-style:none; text-align:center; border-top:1px solid #eee; border-bottom:1px solid #eee; padding:10px 0; }
+.main_links ul li { display:inline; text-transform:uppercase; padding:0 10px; letter-spacing:10px; }
+.main_links ul li a { text-decoration:none; color:#eee; }
+.main_links ul li a:hover { text-decoration:underline; }
+
+.content{
+    margin: 0 auto;
+    clear: both;
+    width: 100%;
+    float: left;
+}
+
+.text {
+	width: 50%;
+	float: left;
+}
+
+.text li {
+    margin: 3px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    float: right;
+}
+
+.enteredtext {
+    width: 50%;
+    float: left;
+
+}
+
+.listed_contact ol{
+    {  font-style:italic; font-family:Georgia, Times, serif; font-size:24px; color:#bfe1f1;  }
+}
+
+.listed_contact ol li {  padding:8px; font-style:normal; font-family:Arial; font-size:13px; color:#eee; border-left: 1px solid #999; }
+
+
+
+
