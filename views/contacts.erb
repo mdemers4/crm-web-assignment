@@ -10,10 +10,13 @@
 
 		<tr>
 			<% Contact.all.each do |contact| %>
-		  <th><%= contact.first_name %> </th>
+			<th>
+			<a href = '/contacts/<% contact.id %>'> 
+		  <%= contact.first_name %> </th>
 		  <th><%= contact.last_name %></th>
 		  <th><%= contact.email %></th>
 		  <th><%= contact.note %></th>
+		  </a>
 
 		  <th>
 		  	<botton type = 'submit'> 

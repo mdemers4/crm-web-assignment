@@ -6,7 +6,8 @@ require 'sinatra'
 require_relative 'contact'
 
 Contact.create('Johnny', 'Bravo', 'johnny@bitmakerlabs.com', 'Rockstar')
-
+Contact.create('a', 'Bravo', 'johnny@bitmakerlabs.com', 'Rockstar')
+Contact.create('b', 'Bravo', 'johnny@bitmakerlabs.com', 'Rockstar')
 
 get '/' do 
 	@crm_app_name = " Mitch's CRM "
@@ -26,8 +27,8 @@ post '/contacts' do
 	redirect to('/contacts')
 end
 
-get '/contacts/1' do
-	@contact = Contact.find(1)
+get '/contacts/:id' do
+	@contact = Contact.find(params[:id].to_i)
 	erb :show_contact
 end
 
