@@ -32,4 +32,63 @@ class Contact
 	def self.find(id)
 		@@contacts.find { |contact| contact.id == id }
 	end
+
+	
+	def self.find_by(attribute, value)
+
+		if attribute == "first name"
+
+			@@contacts.each do |contact|
+				if value == contact.first_name
+					return contact #[contact.first_name, contact.last_name, contact.email, contact.note, contact.id]
+				end
+			end
+			
+		elsif attribute == "last name"
+
+			@@contacts.each do |contact|
+				if value == contact.last_name
+					return contact #[contact.first_name, contact.last_name, contact.email, contact.note, contact.id]
+				end
+			end
+
+
+		elsif attribute == "email"
+
+			@@contacts.each do |contact|
+				if value == contact.email
+					return contact #[contact.first_name, contact.last_name, contact.email, contact.note, contact.id]
+				end
+			end
+		else
+			"the attribute #{attribute} is not searchable, try again"
+			self.find_by()
+		end
+	end
+
+	def self.remove_all()
+		return @@contacts = []
+	end
+
+	def full_name()
+		return "#{@first_name} #{@last_name}"
+	end
+
+	def update(attribute, change)
+		if attribute == "first name"
+			@first_name = change
+		elsif attribute == "last name"
+			@last_name = change
+		elsif attribute == "email"
+			@email = change
+		elsif attribute == "note"
+			@note = change
+		else
+			"attribute does not exist"
+		end
+	end
+
+	def delete()
+		return @@contacts.delete(self)
+	end
 end
