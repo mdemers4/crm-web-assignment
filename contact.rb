@@ -87,6 +87,13 @@ class Contact
 			"attribute does not exist"
 		end
 	end
+	
+	def update_all_attributes(first_name, last_name, email, note)
+		@first_name = change
+		@last_name = change
+		@email = change
+		@note = change
+	end
 
 	def delete()
 		return @@contacts.delete(self)

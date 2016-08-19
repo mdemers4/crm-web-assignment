@@ -88,12 +88,7 @@ table, th, td {
     float: left;
 
 }
-
-.listed_contact ol{
-    {  font-style:italic; font-family:Georgia, Times, serif; font-size:24px; color:#bfe1f1;  }
-}
-
-.listed_contact ol li {  padding:8px; font-style:normal; font-family:Arial; font-size:13px; color:#eee; border-left: 1px solid #999; }
+.listed_contact a {background: none;}
 
 
 

@@ -11,7 +11,7 @@
 		<tr>
 			<% Contact.all.each do |contact| %>
 			<th>
-			<a href = '/contacts/<% contact.id %>'> 
+			<a href = '/contacts/<%= contact.id %>'> 
 		  <%= contact.first_name %> </th>
 		  <th><%= contact.last_name %></th>
 		  <th><%= contact.email %></th>
@@ -19,9 +19,9 @@
 		  </a>
 
 		  <th>
-		  	<botton type = 'submit'> 
+		  	<a href = '/contacts/edit/<%= contact.id %>'>
 		  		<img src="https://cdn1.iconfinder.com/data/icons/turbo-outline/50/Edit-128.png" width="20px"/>
-		  	</botton>
+		  	</a>
 		  </th>
 
 		  <th>
