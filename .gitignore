@@ -1,0 +1,4 @@
+crm-web.sqlite3
+*.sqlite3
+*.sqlite3-journal
+.DS_Store
