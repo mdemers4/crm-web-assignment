@@ -96,6 +96,6 @@ class Contact
 	end
 
 	def delete()
-		return @@contacts.delete(self)
+		return @@contacts.delete_if { |contact| contact.id == self.id }
 	end
 end

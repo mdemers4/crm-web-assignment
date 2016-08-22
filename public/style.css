@@ -90,6 +90,21 @@ table, th, td {
 }
 .listed_contact a {background: none;}
 
+.mainFooter{
+    width: 92%;
+    margin: 10px auto;
+    color: #FFF;
+    position: absolute;
+    bottom: 10px;
+}
+.mainFooter p {
+    text-align:center;
+}
+
+.mainFooter p a {
+    padding:5px;
+}
+
 
 
 
